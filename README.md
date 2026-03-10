@@ -1,128 +1,126 @@
-# SoundWave - Продвинутое приложение для записи и обработки аудио
+# SoundWave - Advanced Audio Recording and Processing App
 
-## Обзор
+## Overview
 
-SoundWave - это современное Android-приложение для записи, обработки и анализа аудио, разработанное с использованием новейших технологий и архитектурных подходов. Приложение предлагает богатый набор функций для работы с аудиозаписями, включая распознавание речи, анализ эмоций, применение аудиоэффектов и многое другое.
+SoundWave is a modern Android app for recording, processing, and analyzing audio, developed using the latest technologies and architectural approaches. The app offers a rich set of features for working with audio recordings, including speech recognition, emotion analysis, audio effects, and much more.
 
-## Ключевые особенности
+## Key Features
 
-### 🎙️ Запись аудио
-- Высококачественная запись аудио с настраиваемыми параметрами
-- Визуализация звуковой волны в реальном времени
-- Автоматическое определение и удаление тишины
-- Поддержка различных форматов аудио (MP3, WAV, AAC, OGG, FLAC)
+### 🎙️ Audio Recording
+- High-quality audio recording with customizable parameters
+- Real-time sound wave visualization
+- Automatic silence detection and removal
+- Support for various audio formats (MP3, WAV, AAC, OGG, FLAC)
 
-### 🔍 Интеллектуальный анализ
-- Распознавание речи с поддержкой русского и английского языков
-- **Анализ эмоций в речи** - определение настроения говорящего
-- Автоматическая транскрипция аудиозаписей
-- Визуализация эмоционального состояния с помощью графиков
+### 🔍 Intelligent Analysis
+- Speech recognition with Russian and English language support
+- **Emotion analysis in speech** - speaker mood detection
+- Automatic transcription of audio recordings
+- Emotional state visualization using graphs
 
-### 🎛️ Обработка аудио
-- Применение различных аудиоэффектов (робот, бурундук, глубокий голос)
-- Улучшение качества звука и нормализация громкости
-- Обрезка и объединение аудиозаписей
-- Конвертация между различными аудиоформатами
+### 🎛️ Audio Processing
+- Apply various audio effects (robot, chipmunk, deep voice)
+- Enhance sound quality and normalize volume
+- Trim and merge audio recordings
+- Convert between different audio formats
 
-### 🔒 Безопасность
-- Шифрование аудиозаписей для защиты конфиденциальной информации
-- Безопасное хранение данных с использованием современных криптографических алгоритмов
+### 🔒 Security
+- Encrypt audio recordings to protect confidential information
+- Secure data storage using Modern cryptographic algorithms
 
-### 📊 Организация и управление
-- Категоризация записей по темам и тегам
-- Добавление заметок к записям
-- Полнотекстовый поиск по записям и транскрипциям
-- Отметка избранных записей
+### 📊 Organization and Management
+- Categorize posts by topic and tag
+- Add notes to posts
+- Full-text search for posts and transcriptions
+- Mark favorite posts
 
-## Технический стек
+## Tech Stack
 
-### Архитектура
-- **MVVM** (Model-View-ViewModel) для чистого разделения ответственности
-- **Clean Architecture** для обеспечения масштабируемости и тестируемости
-- **Dependency Injection** с использованием Hilt для управления зависимостями
+### Architecture
+- **MVVM** (Model-View-ViewModel) for clean separation of concerns
+- **Clean Architecture** for scalability and testability
+- **Dependency Injection** using Hilt for dependency management
 
-### Технологии
-- **Jetpack Compose** для современного декларативного UI
-- **Kotlin Coroutines & Flow** для асинхронного программирования
-- **Room Database** для локального хранения данных
-- **ML Kit** для распознавания речи и анализа языка
-- **FFmpeg** для обработки аудио
-- **Visualizer API** для визуализации аудио в реальном времени
-- **Security Crypto** для шифрования данных
+### Technologies
+- **Jetpack Compose** for a modern declarative UI
+- **Kotlin Coroutines & Flow** for asynchronous programming
+- **Room Database** for local data storage
+- **ML Kit** for speech recognition and language analysis
+- **FFmpeg** for audio processing
+- **Visualizer API** for real-time audio visualization
+- **Security Crypto** for data encryption
 
-## Оптимизация производительности
+## Performance Optimizations
 
-SoundWave оптимизирован для обеспечения плавной работы даже на устройствах среднего класса:
+SoundWave is optimized to ensure smooth operation even on mid-range devices:
 
-- **Ленивая загрузка** компонентов для уменьшения времени запуска
-- **Кэширование** результатов обработки для ускорения повторных операций
-- **Эффективное управление памятью** при работе с аудиофайлами
-- **Фоновая обработка** тяжелых операций с использованием WorkManager
-- **Инкрементальная загрузка** списков записей для плавной прокрутки
-- **Оптимизированные алгоритмы** для анализа аудио в реальном времени
+- Lazy loading of components to reduce startup time
+- Caching of processing results to speed up repeated operations
+- Efficient memory management when working with audio files
+- Background processing of heavy operations using WorkManager
+- Incremental loading of recording lists for smooth scrolling
+- Optimized algorithms for real-time audio analysis
 
-## Требования
+## Requirements
 
-- Android 6.0 (API level 24) или выше
-- Разрешения на запись аудио и доступ к хранилищу
-- Минимум 100 МБ свободного места для установки
+- Android 6.0 (API level 24) or higher
+- Audio recording and storage permissions
+- Minimum 100 MB of free space for installation
 
-## Установка
+## Installation
 
-1. Скачайте последнюю версию APK из раздела [Releases](https://github.com/yourusername/soundwave/releases)
-2. Разрешите установку из неизвестных источников в настройках безопасности
-3. Установите приложение и предоставьте необходимые разрешения при первом запуске
+1. Download the latest APK from the [Releases](https://github.com/yourusername/soundwave/releases) section
+2. Allow installation from unknown sources in Security settings
+3. Install the app and grant the necessary permissions on first launch.
 
-## Сборка из исходников
+## Build from source
 
 ```bash
-# Клонирование репозитория
+# Clone the repository
 git clone https://github.com/yourusername/soundwave.git
 
-# Переход в директорию проекта
+# Go to the project directory
 cd soundwave
 
-# Сборка проекта
+# Build the project
 ./gradlew assembleDebug
 
-# APK будет доступен в app/build/outputs/apk/debug/
+# The APK will be available in app/build/outputs/apk/debug/
 ```
 
-## Архитектура приложения
+## Application architecture
 
-SoundWave построен на принципах Clean Architecture и MVVM:
+SoundWave is built on Clean Architecture and MVVM principles:
 
 ```
 app/
-├── data/                  # Слой данных
-│   ├── model/             # Модели данных
-│   ├── repository/        # Репозитории
-│   └── db/                # База данных Room
-├── di/                    # Dependency Injection
-├── ui/                    # UI компоненты
-│   ├── theme/             # Темы и стили
-│   └── components/        # Переиспользуемые компоненты
-├── screen/                # Экраны приложения
-├── util/                  # Утилиты и сервисы
-└── viewmodel/             # ViewModels
+├── data/ # Data layer
+│ ├── model/ # Data models
+│ ├── repository/ # Repositories
+│ └── db/ # Room database
+├── di/ # Dependency Injection
+├── ui/ # UI components
+│ ├── theme/ # Themes and styles
+│ └── components/ # Reusable components
+├── screen/ # Application screens
+├── util/ # Utilities and services
+└── viewmodel/ # ViewModels
 ```
 
-## Вклад в проект
+## Contributions
 
-Я приветствуем вклад в развитие проекта! Если вы хотите внести свой вклад:
+I welcome contributions to the project! If you'd like to contribute:
 
-1. Форкните репозиторий
-2. Создайте ветку для вашей функции (`git checkout -b feature/amazing-feature`)
-3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
-4. Отправьте изменения в ваш форк (`git push origin feature/amazing-feature`)
-5. Откройте Pull Request
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push your changes to your fork (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
+## Contact
 
-
-## Контакты
-
-Если у вас есть вопросы или предложения, пожалуйста, создайте [Issue](https://github.com/Aristvodolaz/soundwave/issues) или свяжитесь с нами по электронной почте: kap.moral22@gmail.com
+If you have questions or suggestions, please create an [Issue](https://github.com/Aristvodolaz/soundwave/issues) or contact us via email: kap.moral22@gmail.com
 
 ---
 
-Разработано с ❤️ CorryWilliams
+Developed with ❤️ CorryWilliams
